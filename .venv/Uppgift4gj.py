@@ -44,4 +44,21 @@ for y in range(1, 7):
     print(s)
 
 print("j")
-#TODO
+for y in range(1, 7):
+    s = ""
+    if 0 < y < 4:
+        for x in range(1, 9):
+            if x % 3 == 0:
+                s += "#"
+            else:
+                s += "."
+    elif y == 4:
+        for z in range (1, 9):
+            s += "."
+    else:
+        for x in range(1, 9):
+            if (x + y)  % 2 == 0:
+                s += "."
+            else:
+                s += "#"
+    print(s)
